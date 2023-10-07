@@ -1,7 +1,8 @@
 const express  = require("express");
 const cors = require("cors");
 const res = require("express/lib/response");
-const ApiError = require("./app/app-error");
+const ApiError = require("./app/api-error");
+const error = new Error("Resource not found");
 
 const app = express();
 const contactsRouter = require("./app/routes/contact.route");
